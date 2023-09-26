@@ -3,6 +3,7 @@ package edu.temple.simplerecyclerview
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
 class MainActivity : AppCompatActivity() {
@@ -19,7 +20,7 @@ class MainActivity : AppCompatActivity() {
         val number = arrayOf("1","2","3","4")
 
         //Step 2: Provide a LayoutManager
-        recyclerView.layoutManager = GridLayoutManager(this,2)
+        recyclerView.layoutManager = LinearLayoutManager(this)
 
 
         //Step 4: Provide a RecyclerView.Adapter
