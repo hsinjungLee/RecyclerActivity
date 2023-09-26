@@ -16,12 +16,13 @@ class MainActivity : AppCompatActivity() {
         recyclerView = findViewById(R.id.recyclerView)
 
         val recyclerView = findViewById<RecyclerView>(R.id.recyclerView)
+        val number = arrayOf("1","2","3","4")
 
         //Step 2: Provide a LayoutManager
         recyclerView.layoutManager = GridLayoutManager(this,2)
 
 
         //Step 4: Provide a RecyclerView.Adapter
-        recyclerView.adapter = NumberDisplayAdapter()
+        recyclerView.adapter = NumberDisplayAdapter(number)
     }
 }
